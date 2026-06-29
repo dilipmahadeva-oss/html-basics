@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Woxsen University - About</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: #333;
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+header {
+  background: rgba(0, 0, 0, 0.8);
+  padding: 20px 0;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+nav {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.logo {
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  padding: 8px 15px;
+  border-radius: 5px;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  background: #667eea;
+  color: white;
+}
+
+.container {
+  background: white;
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+  color: #667eea;
+  margin-bottom: 20px;
+  border-bottom: 3px solid #667eea;
+  padding-bottom: 15px;
+}
+
+h2 {
+  color: #764ba2;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+h3 {
+  color: #667eea;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+p {
+  margin-bottom: 15px;
+  text-align: justify;
+  color: #555;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+thead {
+  background: #667eea;
+  color: white;
+}
+
+th, td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+tbody tr:hover {
+  background: #f5f5f5;
+}
+
+ul, ol {
+  margin: 15px 0 15px 30px;
+  line-height: 1.8;
+}
+
+ul li, ol li {
+  margin-bottom: 10px;
+  color: #555;
+}
+
+footer {
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <nav>
+    <a href="index.html" class="logo">🎓 Woxsen University</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html" class="active">About</a></li>
+      <li><a href="programs.html">Programs</a></li>
+      <li><a href="faculty.html">Faculty</a></li>
+      <li><a href="admissions.html">Admissions</a></li>
+    </ul>
+  </nav>
+</header>
+
+<div class="container">
+  <h1>About Woxsen University</h1>
+  
+  <h2>Our History and Mission</h2>
+  <p>
+    Woxsen University was established with the vision of creating an institution that combines academic rigor 
+    with practical application. Over the years, we have evolved into a premier educational establishment known 
+    for our commitment to student success and research excellence.
+  </p>
+
+  <h2>University Timeline</h2>
+  <ol>
+    <li><strong>2010:</strong> Woxsen University founded with initial enrollment of 200 students</li>
+    <li><strong>2013:</strong> Launched research center and expanded facilities</li>
+    <li><strong>2015:</strong> Achieved national recognition for educational excellence</li>
+    <li><strong>2018:</strong> Established international partnerships with leading universities</li>
+    <li><strong>2021:</strong> Expanded to multiple campuses across the country</li>
+    <li><strong>2024:</strong> Launched innovative online learning platforms</li>
+    <li><strong>2026:</strong> Celebrating 16 years of academic excellence</li>
+  </ol>
+
+  <h2>Key Statistics</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Metric</th>
+        <th>2020</th>
+        <th>2023</th>
+        <th>2026</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Total Students</td>
+        <td>3,500</td>
+        <td>4,800</td>
+        <td>6,200</td>
+      </tr>
+      <tr>
+        <td>Faculty Members</td>
+        <td>180</td>
+        <td>240</td>
+        <td>320</td>
+      </tr>
+      <tr>
+        <td>Research Publications</td>
+        <td>145</td>
+        <td>320</td>
+        <td>580</td>
+      </tr>
+      <tr>
+        <td>Campus Locations</td>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>Core Values</h2>
+  <ul>
+    <li><strong>Excellence:</strong> Striving for the highest standards in education and research</li>
+    <li><strong>Innovation:</strong> Encouraging creative thinking and groundbreaking solutions</li>
+    <li><strong>Integrity:</strong> Maintaining ethical standards in all academic and administrative practices</li>
+    <li><strong>Inclusivity:</strong> Providing equal opportunities to students from diverse backgrounds</li>
+    <li><strong>Community:</strong> Building a supportive and collaborative learning environment</li>
+  </ul>
+
+  <h2>Accreditations & Recognition</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Accreditation Body</th>
+        <th>Award/Recognition</th>
+        <th>Year</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>National Board of Accreditation</td>
+        <td>A+ Rating</td>
+        <td>2025</td>
+      </tr>
+      <tr>
+        <td>Global University Rankings</td>
+        <td>Top 100 - Asia Pacific</td>
+        <td>2025</td>
+      </tr>
+      <tr>
+        <td>Quality Assurance Committee</td>
+        <td>Excellence in Teaching Award</td>
+        <td>2024</td>
+      </tr>
+      <tr>
+        <td>World Education Summit</td>
+        <td>Innovation in Curriculum Award</td>
+        <td>2024</td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>
+
+<footer>
+  <p>&copy; 2026 Woxsen University. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

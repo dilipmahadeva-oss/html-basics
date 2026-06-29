@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Woxsen University - Faculty</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: #333;
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+header {
+  background: rgba(0, 0, 0, 0.8);
+  padding: 20px 0;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+nav {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.logo {
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  padding: 8px 15px;
+  border-radius: 5px;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  background: #667eea;
+  color: white;
+}
+
+.container {
+  background: white;
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+  color: #667eea;
+  margin-bottom: 20px;
+  border-bottom: 3px solid #667eea;
+  padding-bottom: 15px;
+}
+
+h2 {
+  color: #764ba2;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+h3 {
+  color: #667eea;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+p {
+  margin-bottom: 15px;
+  text-align: justify;
+  color: #555;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+thead {
+  background: #667eea;
+  color: white;
+}
+
+th, td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+tbody tr:hover {
+  background: #f5f5f5;
+}
+
+ul, ol {
+  margin: 15px 0 15px 30px;
+  line-height: 1.8;
+}
+
+ul li, ol li {
+  margin-bottom: 10px;
+  color: #555;
+}
+
+footer {
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+.dept-section {
+  background: #f9f9f9;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 5px;
+  border-left: 4px solid #667eea;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <nav>
+    <a href="index.html" class="logo">🎓 Woxsen University</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="programs.html">Programs</a></li>
+      <li><a href="faculty.html" class="active">Faculty</a></li>
+      <li><a href="admissions.html">Admissions</a></li>
+    </ul>
+  </nav>
+</header>
+
+<div class="container">
+  <h1>Faculty Members</h1>
+  
+  <p>
+    Our faculty comprises distinguished academics and industry experts who are committed to imparting quality 
+    education and conducting cutting-edge research. Our professors bring diverse expertise and real-world experience 
+    to the classroom.
+  </p>
+
+  <h2>Computer Science & Engineering Department</h2>
+  <div class="dept-section">
+    <table>
+      <thead>
+        <tr>
+          <th>Faculty Name</th>
+          <th>Designation</th>
+          <th>Specialization</th>
+          <th>Qualification</th>
+          <th>Experience</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Dr. Rajesh Kumar</td>
+          <td>Professor & HOD</td>
+          <td>Artificial Intelligence</td>
+          <td>PhD in Computer Science</td>
+          <td>18 years</td>
+        </tr>
+        <tr>
+          <td>Prof. Anita Sharma</td>
+          <td>Associate Professor</td>
+          <td>Database Systems</td>
+          <td>M.Tech, B.Tech</td>
+          <td>12 years</td>
+        </tr>
+        <tr>
+          <td>Dr. Arun Singh</td>
+          <td>Associate Professor</td>
+          <td>Cybersecurity</td>
+          <td>PhD in Information Security</td>
+          <td>15 years</td>
+        </tr>
+        <tr>
+          <td>Dr. Priya Patel</td>
+          <td>Assistant Professor</td>
+          <td>Web Technologies</td>
+          <td>PhD in Computer Engineering</td>
+          <td>8 years</td>
+        </tr>
+        <tr>
+          <td>Prof. Manoj Gupta</td>
+          <td>Assistant Professor</td>
+          <td>Data Science</td>
+          <td>M.Tech in Data Science</td>
+          <td>6 years</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h2>Business Administration Department</h2>
+  <div class="dept-section">
+    <table>
+      <thead>
+        <tr>
+          <th>Faculty Name</th>
+          <th>Designation</th>
+          <th>Specialization</th>
+          <th>Qualification</th>
+          <th>Experience</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Dr. Vikram Desai</td>
+          <td>Professor & HOD</td>
+          <td>Strategic Management</td>
+          <td>PhD in Business Administration</td>
+          <td>20 years</td>
+        </tr>
+        <tr>
+          <td>Prof. Deepa Reddy</td>
+          <td>Associate Professor</td>
+          <td>Finance & Accounting</td>
+          <td>MBA, CPA</td>
+          <td>14 years</td>
+        </tr>
+        <tr>
+          <td>Dr. Rohit Joshi</td>
+          <td>Associate Professor</td>
+          <td>Marketing Management</td>
+          <td>PhD in Marketing</td>
+          <td>13 years</td>
+        </tr>
+        <tr>
+          <td>Prof. Neha Verma</td>
+          <td>Assistant Professor</td>
+          <td>Human Resources</td>
+          <td>MBA in HR Management</td>
+          <td>9 years</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h2>Engineering & Applied Sciences Department</h2>
+  <div class="dept-section">
+    <table>
+      <thead>
+        <tr>
+          <th>Faculty Name</th>
+          <th>Designation</th>
+          <th>Department</th>
+          <th>Qualification</th>
+          <th>Research Area</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Dr. Ashok Mishra</td>
+          <td>Professor</td>
+          <td>Mechanical Engineering</td>
+          <td>PhD in Mechanical Engineering</td>
+          <td>Robotics & Automation</td>
+        </tr>
+        <tr>
+          <td>Prof. Sneha Roy</td>
+          <td>Associate Professor</td>
+          <td>Civil Engineering</td>
+          <td>M.Tech in Structural Engineering</td>
+          <td>Green Building Technology</td>
+        </tr>
+        <tr>
+          <td>Dr. Sameer Khan</td>
+          <td>Associate Professor</td>
+          <td>Electronics Engineering</td>
+          <td>PhD in Electronics</td>
+          <td>IoT & Embedded Systems</td>
+        </tr>
+        <tr>
+          <td>Prof. Navita Singh</td>
+          <td>Assistant Professor</td>
+          <td>Physics</td>
+          <td>M.Sc in Physics</td>
+          <td>Nanotechnology</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h2>Faculty Support Services</h2>
+  <ul>
+    <li>Dedicated research labs and facilities</li>
+    <li>International collaboration opportunities</li>
+    <li>Professional development and training programs</li>
+    <li>Mentoring and guidance for student projects</li>
+    <li>Publication support in leading journals</li>
+    <li>Conference presentation funding</li>
+  </ul>
+
+  <h2>Faculty Recognition & Achievements</h2>
+  <ol>
+    <li>5+ Faculty members recognized in "Best Teachers of India" award</li>
+    <li>15+ Faculty publications in international journals annually</li>
+    <li>3+ Faculty members as Guest Lecturers at international universities</li>
+    <li>Ongoing research grants from government and private agencies</li>
+    <li>Active participation in curriculum development for professional bodies</li>
+  </ol>
+
+</div>
+
+<footer>
+  <p>&copy; 2026 Woxsen University. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Woxsen University - Programs</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: #333;
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+header {
+  background: rgba(0, 0, 0, 0.8);
+  padding: 20px 0;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+nav {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.logo {
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  padding: 8px 15px;
+  border-radius: 5px;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  background: #667eea;
+  color: white;
+}
+
+.container {
+  background: white;
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+  color: #667eea;
+  margin-bottom: 20px;
+  border-bottom: 3px solid #667eea;
+  padding-bottom: 15px;
+}
+
+h2 {
+  color: #764ba2;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+h3 {
+  color: #667eea;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+p {
+  margin-bottom: 15px;
+  text-align: justify;
+  color: #555;
+}
+
+ul, ol {
+  margin: 15px 0 15px 30px;
+  line-height: 1.8;
+}
+
+ul li, ol li {
+  margin-bottom: 10px;
+  color: #555;
+}
+
+.program-box {
+  background: #f9f9f9;
+  border-left: 4px solid #667eea;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 5px;
+}
+
+footer {
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <nav>
+    <a href="index.html" class="logo">🎓 Woxsen University</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="programs.html" class="active">Programs</a></li>
+      <li><a href="faculty.html">Faculty</a></li>
+      <li><a href="admissions.html">Admissions</a></li>
+    </ul>
+  </nav>
+</header>
+
+<div class="container">
+  <h1>Academic Programs</h1>
+  
+  <p>
+    Woxsen University offers a comprehensive range of academic programs designed to meet the evolving needs 
+    of the global job market and foster intellectual growth.
+  </p>
+
+  <h2>Undergraduate Programs</h2>
+  <ol>
+    <li>B.Tech in Computer Science and Engineering</li>
+    <li>B.Tech in Information Technology</li>
+    <li>B.Tech in Mechanical Engineering</li>
+    <li>B.Tech in Civil Engineering</li>
+    <li>B.Tech in Electronics and Communication Engineering</li>
+    <li>B.Sc in Physics</li>
+    <li>B.Sc in Chemistry</li>
+    <li>B.Sc in Mathematics</li>
+  </ol>
+
+  <h2>Postgraduate Programs</h2>
+  <ol>
+    <li>M.Tech in Software Engineering</li>
+    <li>M.Tech in Data Science and AI</li>
+    <li>M.Tech in Cybersecurity</li>
+    <li>M.Sc in Applied Mathematics</li>
+    <li>MBA - Business Administration</li>
+    <li>MBA - Finance</li>
+    <li>Master of Computer Applications (MCA)</li>
+  </ol>
+
+  <h2>Computer Science & Engineering Program</h2>
+  <div class="program-box">
+    <h3>Program Overview</h3>
+    <p>
+      The B.Tech Computer Science program is designed to equip students with fundamental and advanced knowledge 
+      in computer systems, programming, algorithms, and software development.
+    </p>
+    
+    <h3>Key Specializations</h3>
+    <ul>
+      <li>Artificial Intelligence and Machine Learning</li>
+      <li>Cloud Computing and DevOps</li>
+      <li>Cybersecurity and Information Security</li>
+      <li>Web Development and Mobile Applications</li>
+      <li>Data Science and Big Data Analytics</li>
+    </ul>
+
+    <h3>Course Structure</h3>
+    <ul>
+      <li>Core subjects: Data Structures, Algorithms, Database Management</li>
+      <li>Programming languages: C, C++, Java, Python, JavaScript</li>
+      <li>Elective courses: AI, ML, Cloud, Security</li>
+      <li>Practical lab work and projects</li>
+      <li>Industry internships in final year</li>
+    </ul>
+  </div>
+
+  <h2>Data Science & AI Program</h2>
+  <div class="program-box">
+    <h3>Program Overview</h3>
+    <p>
+      This interdisciplinary program combines computer science, statistics, and domain expertise to develop 
+      professionals skilled in extracting insights from data and building intelligent systems.
+    </p>
+    
+    <h3>Learning Outcomes</h3>
+    <ul>
+      <li>Master statistical analysis and data visualization techniques</li>
+      <li>Develop machine learning models for real-world problems</li>
+      <li>Implement deep learning and neural networks</li>
+      <li>Work with big data platforms and tools</li>
+      <li>Deploy AI models in production environments</li>
+    </ul>
+
+    <h3>Tools & Technologies Covered</h3>
+    <ul>
+      <li>Python, R, SQL</li>
+      <li>TensorFlow, PyTorch, Scikit-learn</li>
+      <li>Apache Spark, Hadoop</li>
+      <li>Tableau, Power BI for visualization</li>
+      <li>AWS, Azure cloud platforms</li>
+    </ul>
+  </div>
+
+  <h2>Business Administration (MBA) Program</h2>
+  <div class="program-box">
+    <h3>Program Highlights</h3>
+    <ol>
+      <li>Duration: 2 years (Full-time) or 3 years (Part-time)</li>
+      <li>Curriculum based on latest business trends</li>
+      <li>Industry-leading faculty with corporate experience</li>
+      <li>Strong network with leading corporations</li>
+      <li>Internship opportunities with Fortune 500 companies</li>
+    </ol>
+
+    <h3>Specialization Options</h3>
+    <ul>
+      <li>Finance & Investment Management</li>
+      <li>Marketing Management</li>
+      <li>Operations Management</li>
+      <li>Human Resources Management</li>
+      <li>Strategic Management</li>
+      <li>Entrepreneurship</li>
+    </ul>
+  </div>
+
+</div>
+
+<footer>
+  <p>&copy; 2026 Woxsen University. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
