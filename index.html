@@ -1,258 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Woxsen University - Home</title>
-<style>
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  color: #333;
-  line-height: 1.6;
-  min-height: 100vh;
-}
-
-header {
-  background: rgba(0, 0, 0, 0.8);
-  padding: 20px 0;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
-  position: sticky;
-  top: 0;
-  z-index: 100;
-}
-
-nav {
-  max-width: 1200px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 20px;
-}
-
-.logo {
-  color: white;
-  font-size: 24px;
-  font-weight: bold;
-  text-decoration: none;
-}
-
-.nav-links {
-  display: flex;
-  list-style: none;
-  gap: 30px;
-}
-
-.nav-links a {
-  color: white;
-  text-decoration: none;
-  font-weight: 500;
-  transition: all 0.3s ease;
-  padding: 8px 15px;
-  border-radius: 5px;
-}
-
-.nav-links a:hover,
-.nav-links a.active {
-  background: #667eea;
-  color: white;
-}
-
-.container {
-  background: white;
-  max-width: 1000px;
-  margin: 40px auto;
-  padding: 40px;
-  border-radius: 10px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-}
-
-h1 {
-  color: #667eea;
-  margin-bottom: 20px;
-  border-bottom: 3px solid #667eea;
-  padding-bottom: 15px;
-}
-
-h2 {
-  color: #764ba2;
-  margin-top: 30px;
-  margin-bottom: 15px;
-}
-
-h3 {
-  color: #667eea;
-  margin-top: 20px;
-  margin-bottom: 10px;
-}
-
-p {
-  margin-bottom: 15px;
-  text-align: justify;
-  color: #555;
-}
-
-button {
-  padding: 12px 25px;
-  background: #667eea;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 16px;
-  font-weight: 600;
-  transition: all 0.3s ease;
-  margin: 10px 5px;
-}
-
-button:hover {
-  background: #764ba2;
-  transform: translateY(-2px);
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-}
-
-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin: 20px 0;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-}
-
-thead {
-  background: #667eea;
-  color: white;
-}
-
-th, td {
-  padding: 15px;
-  text-align: left;
-  border-bottom: 1px solid #ddd;
-}
-
-tbody tr:hover {
-  background: #f5f5f5;
-}
-
-ul, ol {
-  margin: 15px 0 15px 30px;
-  line-height: 1.8;
-}
-
-ul li, ol li {
-  margin-bottom: 10px;
-  color: #555;
-}
-
-.notice-box {
-  background: #e7f3ff;
-  border-left: 4px solid #667eea;
-  padding: 20px;
-  margin: 20px 0;
-  border-radius: 5px;
-}
-
-.notice-box strong {
-  color: #764ba2;
-}
-
-footer {
-  background: rgba(0, 0, 0, 0.8);
-  color: white;
-  text-align: center;
-  padding: 20px;
-  margin-top: 40px;
-}
-
-.content {
-  display: none;
-}
-
-.content.active {
-  display: block;
-}
-
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Woxsen University - Home</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
+  <header>
+    <nav>
+      <a href="index.html" class="logo">🎓 Woxsen University</a>
+      <ul class="nav-links" id="nav-links"></ul>
+    </nav>
+  </header>
 
-<header>
-  <nav>
-    <a href="index.html" class="logo">🎓 Woxsen University</a>
-    <ul class="nav-links">
-      <li><a href="index.html" class="active">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="programs.html">Programs</a></li>
-      <li><a href="faculty.html">Faculty</a></li>
-      <li><a href="admissions.html">Admissions</a></li>
-    </ul>
-  </nav>
-</header>
+  <main class="container">
+    <section aria-labelledby="hero-title">
+      <h1 id="hero-title"></h1>
+      <div id="hero-intro"></div>
+    </section>
 
-<div class="container">
-  <h1>Welcome to Woxsen University</h1>
-  
-  <p>
-    Woxsen University is a leading institution of higher learning dedicated to excellence in education, research, 
-    and innovation. Our mission is to prepare students for the challenges of the modern world through comprehensive 
-    education and hands-on learning experiences.
-  </p>
+    <section aria-labelledby="notice-title">
+      <div class="notice-box">
+        <strong>📢 Latest Notice:</strong>
+        <span id="notice">Click a button below to view the latest announcement</span>
+      </div>
 
-  <p>
-    Founded with a vision to transform education, Woxsen University combines traditional academic excellence with 
-    contemporary teaching methodologies. We pride ourselves on maintaining small class sizes, ensuring personalized 
-    attention and mentorship for every student.
-  </p>
+      <div id="notice-buttons"></div>
+    </section>
 
-  <div class="notice-box">
-    <strong>📢 Latest Notice:</strong> <span id="notice">Click below to view the latest announcement</span>
-  </div>
+    <section aria-labelledby="highlights-title">
+      <h2 id="highlights-title">Our Campus Highlights</h2>
+      <ul id="highlights-list"></ul>
+    </section>
 
-  <button onclick="showMessage()">View Latest Announcement</button>
-  <button onclick="showNotice2()">View Important Updates</button>
+    <section aria-labelledby="reasons-title">
+      <h2 id="reasons-title">Why Choose Woxsen University?</h2>
+      <ol id="reasons-list"></ol>
+    </section>
+  </main>
 
-  <h2>Our Campus Highlights</h2>
-  <ul>
-    <li>State-of-the-art infrastructure and facilities</li>
-    <li>Experienced and dedicated faculty members</li>
-    <li>Research-focused curriculum</li>
-    <li>Strong industry connections and internship opportunities</li>
-    <li>Vibrant student community and cultural events</li>
-  </ul>
+  <footer>
+    <p id="footer-text"></p>
+  </footer>
 
-  <h2>Why Choose Woxsen University?</h2>
-  <ol>
-    <li>Excellence in academics and research</li>
-    <li>Experienced mentors and faculty advisors</li>
-    <li>Modern infrastructure and learning resources</li>
-    <li>Diverse learning opportunities and student activities</li>
-    <li>Strong placement and career development support</li>
-    <li>International exposure and global network</li>
-  </ol>
-
-</div>
-
-<footer>
-  <p>&copy; 2026 Woxsen University. All rights reserved.</p>
-</footer>
-
-<script>
-function showMessage() {
-  document.getElementById("notice").innerHTML = 
-  "✅ Admissions Open for Academic Year 2026 - Apply Now!";
-}
-
-function showNotice2() {
-  document.getElementById("notice").innerHTML = 
-  "📅 Campus Tours: Every Saturday at 10:00 AM. Register at admissions@woxsen.edu";
-}
-</script>
-
+  <script src="content.js"></script>
+  <script src="main.js"></script>
 </body>
 </html>
