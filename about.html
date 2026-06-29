@@ -4,134 +4,116 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Woxsen University - About</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-
-<header>
-  <nav>
-    <a href="index.html" class="logo">🎓 Woxsen University</a>
-    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-links">
-      ☰
-    </button>
-    <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html" class="active">About</a></li>
-      <li><a href="programs.html">Programs</a></li>
-      <li><a href="faculty.html">Faculty</a></li>
-      <li><a href="admissions.html">Admissions</a></li>
-    </ul>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm">
+    <div class="container">
+      <a href="index.html" class="navbar-brand fw-bold">🎓 Woxsen University</a>
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link active" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="programs.html">Programs</a></li>
+          <li class="nav-item"><a class="nav-link" href="faculty.html">Faculty</a></li>
+          <li class="nav-item"><a class="nav-link" href="admissions.html">Admissions</a></li>
+        </ul>
+      </div>
+    </div>
   </nav>
-</header>
 
-<div class="container">
-  <h1>About Woxsen University</h1>
-  
-  <h2>Our History and Mission</h2>
-  <p>
-    Woxsen University was established with the vision of creating an institution that combines academic rigor 
-    with practical application. Over the years, we have evolved into a premier educational establishment known 
-    for our commitment to student success and research excellence.
-  </p>
+<main class="container py-4 py-lg-5">
+  <section class="card shadow-sm border-0 mb-4">
+    <div class="card-body p-4 p-lg-5">
+      <span class="badge bg-primary-subtle text-primary mb-3">About Us</span>
+      <h1 class="display-6 fw-bold text-primary">About Woxsen University</h1>
+      <p class="lead">Woxsen University was established with the vision of creating an institution that combines academic rigor with practical application.</p>
+      <p>Over the years, we have evolved into a premier educational establishment known for our commitment to student success and research excellence.</p>
+    </div>
+  </section>
 
-  <h2>University Timeline</h2>
-  <ol>
-    <li><strong>2010:</strong> Woxsen University founded with initial enrollment of 200 students</li>
-    <li><strong>2013:</strong> Launched research center and expanded facilities</li>
-    <li><strong>2015:</strong> Achieved national recognition for educational excellence</li>
-    <li><strong>2018:</strong> Established international partnerships with leading universities</li>
-    <li><strong>2021:</strong> Expanded to multiple campuses across the country</li>
-    <li><strong>2024:</strong> Launched innovative online learning platforms</li>
-    <li><strong>2026:</strong> Celebrating 16 years of academic excellence</li>
-  </ol>
+  <section class="row g-4 mb-4">
+    <div class="col-lg-7">
+      <div class="card shadow-sm border-0 h-100">
+        <div class="card-body p-4">
+          <h2 class="h4 text-primary">University Timeline</h2>
+          <ol class="list-group list-group-numbered">
+            <li class="list-group-item"><strong>2010:</strong> Woxsen University founded with initial enrollment of 200 students</li>
+            <li class="list-group-item"><strong>2013:</strong> Launched research center and expanded facilities</li>
+            <li class="list-group-item"><strong>2015:</strong> Achieved national recognition for educational excellence</li>
+            <li class="list-group-item"><strong>2018:</strong> Established international partnerships with leading universities</li>
+            <li class="list-group-item"><strong>2021:</strong> Expanded to multiple campuses across the country</li>
+            <li class="list-group-item"><strong>2024:</strong> Launched innovative online learning platforms</li>
+            <li class="list-group-item"><strong>2026:</strong> Celebrating 16 years of academic excellence</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-5">
+      <div class="card shadow-sm border-0 h-100">
+        <div class="card-body p-4">
+          <h2 class="h4 text-primary">Core Values</h2>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item"><strong>Excellence:</strong> Highest standards in education and research</li>
+            <li class="list-group-item"><strong>Innovation:</strong> Creative thinking and groundbreaking solutions</li>
+            <li class="list-group-item"><strong>Integrity:</strong> Ethical academic and administrative practices</li>
+            <li class="list-group-item"><strong>Inclusivity:</strong> Equal opportunities for all learners</li>
+            <li class="list-group-item"><strong>Community:</strong> Supportive and collaborative environment</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
 
-  <h2>Key Statistics</h2>
-  <table>
-    <thead>
-      <tr>
-        <th>Metric</th>
-        <th>2020</th>
-        <th>2023</th>
-        <th>2026</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Total Students</td>
-        <td>3,500</td>
-        <td>4,800</td>
-        <td>6,200</td>
-      </tr>
-      <tr>
-        <td>Faculty Members</td>
-        <td>180</td>
-        <td>240</td>
-        <td>320</td>
-      </tr>
-      <tr>
-        <td>Research Publications</td>
-        <td>145</td>
-        <td>320</td>
-        <td>580</td>
-      </tr>
-      <tr>
-        <td>Campus Locations</td>
-        <td>1</td>
-        <td>2</td>
-        <td>3</td>
-      </tr>
-    </tbody>
-  </table>
+  <section class="card shadow-sm border-0 mb-4">
+    <div class="card-body p-4">
+      <h2 class="h4 text-primary">Key Statistics</h2>
+      <div class="table-responsive">
+        <table class="table table-striped align-middle">
+          <thead class="table-primary">
+            <tr><th>Metric</th><th>2020</th><th>2023</th><th>2026</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Total Students</td><td>3,500</td><td>4,800</td><td>6,200</td></tr>
+            <tr><td>Faculty Members</td><td>180</td><td>240</td><td>320</td></tr>
+            <tr><td>Research Publications</td><td>145</td><td>320</td><td>580</td></tr>
+            <tr><td>Campus Locations</td><td>1</td><td>2</td><td>3</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
 
-  <h2>Core Values</h2>
-  <ul>
-    <li><strong>Excellence:</strong> Striving for the highest standards in education and research</li>
-    <li><strong>Innovation:</strong> Encouraging creative thinking and groundbreaking solutions</li>
-    <li><strong>Integrity:</strong> Maintaining ethical standards in all academic and administrative practices</li>
-    <li><strong>Inclusivity:</strong> Providing equal opportunities to students from diverse backgrounds</li>
-    <li><strong>Community:</strong> Building a supportive and collaborative learning environment</li>
-  </ul>
+  <section class="card shadow-sm border-0">
+    <div class="card-body p-4">
+      <h2 class="h4 text-primary">Accreditations & Recognition</h2>
+      <div class="table-responsive">
+        <table class="table table-hover align-middle">
+          <thead class="table-light">
+            <tr><th>Accreditation Body</th><th>Award/Recognition</th><th>Year</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>National Board of Accreditation</td><td>A+ Rating</td><td>2025</td></tr>
+            <tr><td>Global University Rankings</td><td>Top 100 - Asia Pacific</td><td>2025</td></tr>
+            <tr><td>Quality Assurance Committee</td><td>Excellence in Teaching Award</td><td>2024</td></tr>
+            <tr><td>World Education Summit</td><td>Innovation in Curriculum Award</td><td>2024</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+</main>
 
-  <h2>Accreditations & Recognition</h2>
-  <table>
-    <thead>
-      <tr>
-        <th>Accreditation Body</th>
-        <th>Award/Recognition</th>
-        <th>Year</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>National Board of Accreditation</td>
-        <td>A+ Rating</td>
-        <td>2025</td>
-      </tr>
-      <tr>
-        <td>Global University Rankings</td>
-        <td>Top 100 - Asia Pacific</td>
-        <td>2025</td>
-      </tr>
-      <tr>
-        <td>Quality Assurance Committee</td>
-        <td>Excellence in Teaching Award</td>
-        <td>2024</td>
-      </tr>
-      <tr>
-        <td>World Education Summit</td>
-        <td>Innovation in Curriculum Award</td>
-        <td>2024</td>
-      </tr>
-    </tbody>
-  </table>
-
-</div>
-
-<footer>
-  <p>&copy; 2026 Woxsen University. All rights reserved.</p>
+<footer class="bg-dark text-white py-4 mt-5">
+  <div class="container text-center">
+    <p class="mb-0">&copy; 2026 Woxsen University. All rights reserved.</p>
+  </div>
 </footer>
 
-<script src="nav.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

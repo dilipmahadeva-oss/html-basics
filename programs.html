@@ -4,140 +4,121 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Woxsen University - Programs</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
+  <header class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm">
+    <div class="container">
+      <a href="index.html" class="navbar-brand fw-bold">🎓 Woxsen University</a>
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link active" href="programs.html">Programs</a></li>
+          <li class="nav-item"><a class="nav-link" href="faculty.html">Faculty</a></li>
+          <li class="nav-item"><a class="nav-link" href="admissions.html">Admissions</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
 
-<header>
-  <nav>
-    <a href="index.html" class="logo">🎓 Woxsen University</a>
-    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-links">
-      ☰
-    </button>
-    <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="programs.html" class="active">Programs</a></li>
-      <li><a href="faculty.html">Faculty</a></li>
-      <li><a href="admissions.html">Admissions</a></li>
-    </ul>
-  </nav>
-</header>
+<main class="container py-4 py-lg-5">
+  <section class="card shadow-sm border-0 mb-4">
+    <div class="card-body p-4 p-lg-5">
+      <span class="badge bg-primary-subtle text-primary mb-3">Academic Excellence</span>
+      <h1 class="display-6 fw-bold text-primary">Academic Programs</h1>
+      <p class="lead">Woxsen University offers a comprehensive range of academic programs designed to meet the evolving needs of the global job market and foster intellectual growth.</p>
+    </div>
+  </section>
 
-<div class="container">
-  <h1>Academic Programs</h1>
-  
-  <p>
-    Woxsen University offers a comprehensive range of academic programs designed to meet the evolving needs 
-    of the global job market and foster intellectual growth.
-  </p>
+  <section class="row g-4 mb-4">
+    <div class="col-lg-6">
+      <div class="card shadow-sm border-0 h-100">
+        <div class="card-body p-4">
+          <h2 class="h5 text-primary">Undergraduate Programs</h2>
+          <ol class="list-group list-group-numbered">
+            <li class="list-group-item">B.Tech in Computer Science and Engineering</li>
+            <li class="list-group-item">B.Tech in Information Technology</li>
+            <li class="list-group-item">B.Tech in Mechanical Engineering</li>
+            <li class="list-group-item">B.Tech in Civil Engineering</li>
+            <li class="list-group-item">B.Tech in Electronics and Communication Engineering</li>
+            <li class="list-group-item">B.Sc in Physics</li>
+            <li class="list-group-item">B.Sc in Chemistry</li>
+            <li class="list-group-item">B.Sc in Mathematics</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-6">
+      <div class="card shadow-sm border-0 h-100">
+        <div class="card-body p-4">
+          <h2 class="h5 text-primary">Postgraduate Programs</h2>
+          <ol class="list-group list-group-numbered">
+            <li class="list-group-item">M.Tech in Software Engineering</li>
+            <li class="list-group-item">M.Tech in Data Science and AI</li>
+            <li class="list-group-item">M.Tech in Cybersecurity</li>
+            <li class="list-group-item">M.Sc in Applied Mathematics</li>
+            <li class="list-group-item">MBA - Business Administration</li>
+            <li class="list-group-item">MBA - Finance</li>
+            <li class="list-group-item">Master of Computer Applications (MCA)</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </section>
 
-  <h2>Undergraduate Programs</h2>
-  <ol>
-    <li>B.Tech in Computer Science and Engineering</li>
-    <li>B.Tech in Information Technology</li>
-    <li>B.Tech in Mechanical Engineering</li>
-    <li>B.Tech in Civil Engineering</li>
-    <li>B.Tech in Electronics and Communication Engineering</li>
-    <li>B.Sc in Physics</li>
-    <li>B.Sc in Chemistry</li>
-    <li>B.Sc in Mathematics</li>
-  </ol>
+  <section class="card shadow-sm border-0 mb-4">
+    <div class="card-body p-4">
+      <h2 class="h5 text-primary">Computer Science & Engineering Program</h2>
+      <p>The B.Tech Computer Science program is designed to equip students with fundamental and advanced knowledge in computer systems, programming, algorithms, and software development.</p>
+      <h3 class="h6 mt-3">Key Specializations</h3>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">Artificial Intelligence and Machine Learning</li>
+        <li class="list-group-item">Cloud Computing and DevOps</li>
+        <li class="list-group-item">Cybersecurity and Information Security</li>
+        <li class="list-group-item">Web Development and Mobile Applications</li>
+        <li class="list-group-item">Data Science and Big Data Analytics</li>
+      </ul>
+    </div>
+  </section>
 
-  <h2>Postgraduate Programs</h2>
-  <ol>
-    <li>M.Tech in Software Engineering</li>
-    <li>M.Tech in Data Science and AI</li>
-    <li>M.Tech in Cybersecurity</li>
-    <li>M.Sc in Applied Mathematics</li>
-    <li>MBA - Business Administration</li>
-    <li>MBA - Finance</li>
-    <li>Master of Computer Applications (MCA)</li>
-  </ol>
+  <section class="card shadow-sm border-0 mb-4">
+    <div class="card-body p-4">
+      <h2 class="h5 text-primary">Data Science & AI Program</h2>
+      <p>This interdisciplinary program combines computer science, statistics, and domain expertise to develop professionals skilled in extracting insights from data and building intelligent systems.</p>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">Master statistical analysis and data visualization techniques</li>
+        <li class="list-group-item">Develop machine learning models for real-world problems</li>
+        <li class="list-group-item">Implement deep learning and neural networks</li>
+        <li class="list-group-item">Work with big data platforms and tools</li>
+        <li class="list-group-item">Deploy AI models in production environments</li>
+      </ul>
+    </div>
+  </section>
 
-  <h2>Computer Science & Engineering Program</h2>
-  <div class="program-box">
-    <h3>Program Overview</h3>
-    <p>
-      The B.Tech Computer Science program is designed to equip students with fundamental and advanced knowledge 
-      in computer systems, programming, algorithms, and software development.
-    </p>
-    
-    <h3>Key Specializations</h3>
-    <ul>
-      <li>Artificial Intelligence and Machine Learning</li>
-      <li>Cloud Computing and DevOps</li>
-      <li>Cybersecurity and Information Security</li>
-      <li>Web Development and Mobile Applications</li>
-      <li>Data Science and Big Data Analytics</li>
-    </ul>
+  <section class="card shadow-sm border-0">
+    <div class="card-body p-4">
+      <h2 class="h5 text-primary">Business Administration (MBA) Program</h2>
+      <p>Designed for aspiring leaders with strong industry exposure and practical learning.</p>
+      <ol class="list-group list-group-numbered">
+        <li class="list-group-item">2-year full-time or 3-year part-time option</li>
+        <li class="list-group-item">Curriculum aligned with current business trends</li>
+        <li class="list-group-item">Internship opportunities with Fortune 500 companies</li>
+      </ol>
+    </div>
+  </section>
+</main>
 
-    <h3>Course Structure</h3>
-    <ul>
-      <li>Core subjects: Data Structures, Algorithms, Database Management</li>
-      <li>Programming languages: C, C++, Java, Python, JavaScript</li>
-      <li>Elective courses: AI, ML, Cloud, Security</li>
-      <li>Practical lab work and projects</li>
-      <li>Industry internships in final year</li>
-    </ul>
+<footer class="bg-dark text-white py-4 mt-5">
+  <div class="container text-center">
+    <p class="mb-0">&copy; 2026 Woxsen University. All rights reserved.</p>
   </div>
-
-  <h2>Data Science & AI Program</h2>
-  <div class="program-box">
-    <h3>Program Overview</h3>
-    <p>
-      This interdisciplinary program combines computer science, statistics, and domain expertise to develop 
-      professionals skilled in extracting insights from data and building intelligent systems.
-    </p>
-    
-    <h3>Learning Outcomes</h3>
-    <ul>
-      <li>Master statistical analysis and data visualization techniques</li>
-      <li>Develop machine learning models for real-world problems</li>
-      <li>Implement deep learning and neural networks</li>
-      <li>Work with big data platforms and tools</li>
-      <li>Deploy AI models in production environments</li>
-    </ul>
-
-    <h3>Tools & Technologies Covered</h3>
-    <ul>
-      <li>Python, R, SQL</li>
-      <li>TensorFlow, PyTorch, Scikit-learn</li>
-      <li>Apache Spark, Hadoop</li>
-      <li>Tableau, Power BI for visualization</li>
-      <li>AWS, Azure cloud platforms</li>
-    </ul>
-  </div>
-
-  <h2>Business Administration (MBA) Program</h2>
-  <div class="program-box">
-    <h3>Program Highlights</h3>
-    <ol>
-      <li>Duration: 2 years (Full-time) or 3 years (Part-time)</li>
-      <li>Curriculum based on latest business trends</li>
-      <li>Industry-leading faculty with corporate experience</li>
-      <li>Strong network with leading corporations</li>
-      <li>Internship opportunities with Fortune 500 companies</li>
-    </ol>
-
-    <h3>Specialization Options</h3>
-    <ul>
-      <li>Finance & Investment Management</li>
-      <li>Marketing Management</li>
-      <li>Operations Management</li>
-      <li>Human Resources Management</li>
-      <li>Strategic Management</li>
-      <li>Entrepreneurship</li>
-    </ul>
-  </div>
-
-</div>
-
-<footer>
-  <p>&copy; 2026 Woxsen University. All rights reserved.</p>
 </footer>
 
-<script src="nav.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

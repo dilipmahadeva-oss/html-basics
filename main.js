@@ -12,8 +12,8 @@ document.addEventListener('DOMContentLoaded', () => {
     navList.innerHTML = siteData.navItems
       .map(
         (item) => `
-          <li>
-            <a href="${item.href}" class="${item.active ? 'active' : ''}">${item.label}</a>
+          <li class="nav-item">
+            <a href="${item.href}" class="nav-link ${item.active ? 'active' : ''}">${item.label}</a>
           </li>
         `
       )
@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
   if (noticeButtons) {
     noticeButtons.innerHTML = siteData.notices
       .map(
-        (item) => `<button type="button" data-message="${item.message}">${item.label}</button>`
+        (item) => `<button type="button" class="btn btn-primary" data-message="${item.message}">${item.label}</button>`
       )
       .join('');
 
@@ -46,13 +46,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
   if (highlightsList) {
     highlightsList.innerHTML = siteData.highlights
-      .map((item) => `<li>${item}</li>`)
+      .map((item) => `<li class="list-group-item">${item}</li>`)
       .join('');
   }
 
   if (reasonsList) {
     reasonsList.innerHTML = siteData.reasons
-      .map((item) => `<li>${item}</li>`)
+      .map((item) => `<li class="list-group-item">${item}</li>`)
       .join('');
   }
 

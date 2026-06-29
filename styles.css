@@ -25,16 +25,33 @@ header {
   z-index: 100;
 }
 
-nav {
-  max-width: 1200px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 20px;
-  gap: 12px;
-  flex-wrap: wrap;
-  position: relative;
+.navbar-brand {
+  color: white !important;
+  font-size: 1.5rem !important;
+  font-weight: bold !important;
+  white-space: nowrap;
+  display: inline-block;
+}
+
+.nav-link {
+  color: white !important;
+  transition: all 0.3s ease !important;
+}
+
+.nav-link:hover {
+  background: #667eea !important;
+  border-radius: 5px !important;
+}
+
+.nav-link.active {
+  background: #667eea !important;
+  border-radius: 5px !important;
+}
+
+button:focus-visible,
+.navbar-toggler:focus-visible {
+  outline: 3px solid #fff;
+  outline-offset: 2px;
 }
 
 .logo {
@@ -44,45 +61,14 @@ nav {
   text-decoration: none;
 }
 
-.nav-toggle {
-  display: none;
-  background: transparent;
-  color: white;
-  font-size: 24px;
-  border: none;
-  cursor: pointer;
-  padding: 4px 8px;
-}
-
-.nav-links {
-  display: flex;
-  list-style: none;
-  gap: 10px;
-  flex-wrap: wrap;
-  justify-content: center;
-  transition: all 0.3s ease-in-out;
-}
-
-.nav-links a {
-  color: white;
-  text-decoration: none;
-  font-weight: 500;
-  transition: all 0.3s ease;
-  padding: 8px 12px;
-  border-radius: 5px;
-  display: inline-block;
-}
-
-.nav-links a:hover,
-.nav-links a.active {
-  background: #667eea;
-  color: white;
-}
-
-.nav-links a:focus-visible,
-button:focus-visible {
-  outline: 3px solid #fff;
-  outline-offset: 2px;
+header .container,
+nav .container {
+  background: transparent !important;
+  width: 100% !important;
+  margin: 0 !important;
+  padding: 0 20px !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
 }
 
 .container {
@@ -129,13 +115,21 @@ button {
   font-size: 16px;
   font-weight: 600;
   transition: all 0.3s ease;
-  margin: 8px 0;
+  margin: 8px 8px 8px 0;
+  display: inline-block;
+  white-space: nowrap;
 }
 
 button:hover {
   background: #764ba2;
   transform: translateY(-2px);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+#notice-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
 }
 
 table {
@@ -210,45 +204,6 @@ footer {
 }
 
 @media (max-width: 768px) {
-  nav {
-    justify-content: space-between;
-    text-align: left;
-  }
-
-  .nav-toggle {
-    display: inline-block;
-  }
-
-  .nav-links {
-    display: none;
-    width: 100%;
-    flex-direction: column;
-    background: rgba(0, 0, 0, 0.95);
-    padding: 10px;
-    border-radius: 8px;
-    margin-top: 10px;
-    opacity: 0;
-    transform: translateY(-8px);
-    pointer-events: none;
-  }
-
-  .nav-links.show {
-    display: flex;
-    opacity: 1;
-    transform: translateY(0);
-    pointer-events: auto;
-  }
-
-  .nav-links li {
-    width: 100%;
-  }
-
-  .nav-links a {
-    display: block;
-    width: 100%;
-    padding: 10px 12px;
-  }
-
   .container {
     width: min(100%, calc(100% - 20px));
     padding: 18px;
@@ -272,15 +227,6 @@ footer {
   .logo {
     width: 100%;
     text-align: center;
-  }
-
-  .nav-links {
-    gap: 6px;
-  }
-
-  .nav-links a {
-    padding: 6px 10px;
-    font-size: 14px;
   }
 
   .container {
